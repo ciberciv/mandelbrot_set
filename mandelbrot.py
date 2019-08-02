@@ -15,7 +15,7 @@ def isDivergent(c, maxIt):
     return iteration
 
 
-def mandelbrot(maxIt, realsFrom, realsTo, complexFrom, complexTo, xPixels = 1920, yPixels = 1080):
+def mandelbrot(maxIt, realsFrom, realsTo, complexFrom, complexTo, xPixels = 1000, yPixels = 1000):
     realAxis = np.linspace(realsFrom, realsTo, xPixels)
     complexAxis = np.linspace(complexFrom, complexTo, yPixels)
     
@@ -33,10 +33,5 @@ def mandelbrot(maxIt, realsFrom, realsTo, complexFrom, complexTo, xPixels = 1920
     plt.show()
 
 
-mandelbrot(400, -2., 1., -1.5, 1.5, 5000, 5000)
-# mandelbrot(400, -0.22, -0.219, -0.70, -0.699)
-
-# realAxis = np.linspace(-2.25, 0.75, density)
-    # imaginaryAxis = np.linspace(-1.5, 1.5, density)
-    # realAxis = np.linspace(-0.22, -0.219, xPixels)
-    # complexAxis = np.linspace(-0.70, -0.699, yPixels)
+# mandelbrot(400, -2., 1., -1.5, 1.5)
+mandelbrot(400, -0.22, -0.219, -0.70, -0.699)
